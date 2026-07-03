@@ -1,0 +1,55 @@
+"flightId":1393216160,
+"final":true,
+"canceled":false,
+
+"scheduledDepartureUTC":"2026-07-02T15:05:00.000Z"
+
+"scheduledArrivalUTC":"2026-07-02T22:10:00.000Z"
+
+"isLanded":true
+
+"status":"Arrived"
+"finalStatus":"On Time"
+
+carrier":{
+         "name":"JAL",
+         "fs":"JL"},
+"flightNumber":"35",
+,
+"diverted":false,
+"departureAirportFS":"HND",
+"arrivalAirportFS":"SIN",
+"divertedAirport":null,
+"operatedBy":null,
+
+"gate":"109",
+"terminal":"3",
+
+"time24":"00:05",
+"time24":"00:05"
+"runway":false,
+
+"arrivalAirport":{
+      "fs":"SIN",
+      "iata":"SIN",
+      "name":"Singapore Changi Airport",
+      "city":"Singapore",
+      "country":"SG",
+      "timeZoneRegionName":"Asia/Singapore",
+      "regionName":"Asia",
+      "gate":"C15",
+      "terminal":"1",
+      "baggage":"14",
+
+      "time24":"06:10",
+            "timezone":"+08"}
+            "time24":"06:08",
+            "runway":false,
+            "timezone":"+08",
+    "divertedAirport":null,
+
+    "equipment":{
+            "iata":"76W",
+            "name":"Boeing 767-300 (winglets) Passenger",
+            "title":"Actual"},
+         "flightDuration":"7h 3m",
