@@ -1,0 +1,110 @@
+flightId,canceled,finalStatus,flightNumber,diverted,arrivalAirportFS,divertedAirport,operatedBy,gate,terminal,flightDuration,carrier,equipment,depTimeScheduled,depTimeActual,arrTimeScheduled,arrTimeActual,timezone
+1393005943,false,On Time,35,false,SIN,null,null,141,3,7h 16m,JL,76W,00:05,00:06,06:10,06:22,+08
+1392986772,false,Delayed,313,false,DXB,null,null,144,INTL,10h 48m,EK,77W,00:05,00:32,05:40,06:20,+04
+1393020276,false,On Time,849,false,BKK,null,null,67,2,5h 57m,NH,789,00:15,00:29,04:35,04:26,+07
+1393006055,false,On Time,41,false,LHR,null,null,113,3,14h 2m,JL,789,00:15,00:16,06:25,06:18,BST
+1393033990,false,On Time,661,false,BKK,null,null,109,3,5h 53m,TG,359,00:20,00:28,04:50,04:21,+07
+1393019742,false,On Time,221,false,ARN,null,null,73,2,13h 18m,NH,788,00:30,00:34,07:15,06:52,CEST
+1393019515,false,On Time,106,false,LAX,null,null,72,2,10h 7m,NH,788,00:30,00:27,19:10,18:34,PDT
+1393020270,false,Delayed,843,false,SIN,null,Operated by AirJapan on behalf of ANA,69,2,7h 12m,NH,789,00:40,00:46,06:40,06:58,+08
+1393045242,false,On Time,623,false,HKG,null,null,143,3,4h 27m,UO,32Q,01:00,00:39,04:40,04:06,HKT
+1392952722,false,On Time,8516,false,PVG,null,null,145,3,3h 7m,9C,32N,01:05,00:54,03:30,03:01,CST
+1393005932,false,On Time,33,false,BKK,null,null,111,3,5h 52m,JL,789,01:20,01:17,05:45,05:09,+07
+1393020297,false,On Time,877,false,BKK,null,Operated by AirJapan on behalf of ANA,66,2,5h 43m,NH,788,01:25,01:29,05:55,05:12,+07
+1393022999,false,On Time,177,false,ICN,null,null,142,3,2h 23m,OZ,333,01:30,01:24,04:10,03:47,KST
+1393020225,false,On Time,813,false,HKG,null,null,71,2,4h 22m,NH,788,01:35,01:36,05:15,04:58,HKT
+1393006348,false,On Time,79,false,SGN,null,null,110,3,5h 34m,JL,788,01:50,01:45,05:25,05:19,+07
+1393006322,false,On Time,77,false,MNL,null,null,114,3,4h 15m,JL,788,01:55,01:54,05:35,05:09,PST
+1393048212,false,On Time,821,false,SGN,null,null,144,3,6h 2m,VJC,32Q,02:00,02:10,06:10,06:12,+07
+1393008027,false,On Time,752,false,ICN,null,null,146,3,2h 24m,KE,359,02:00,02:04,04:35,04:28,KST
+1393025252,false,On Time,423,false,MNL,null,null,149,3,4h 24m,PR,32Q,02:05,01:47,05:40,05:11,PST
+1393016053,false,On Time,809,false,ICN,null,null,108A,3,2h 32m,APJ,32A,02:10,02:03,04:40,04:35,KST
+1393045233,false,On Time,629,false,HKG,null,null,143,3,4h 27m,UO,32Q,02:20,02:17,06:00,05:44,HKT
+1393016071,false,On Time,877,false,PVG,null,null,107A,3,3h 15m,APJ,32N,02:40,02:44,05:00,04:59,CST
+1393003530,false,On Time,217,false,TPE,null,null,144,3,3h 22m,TTW,32A,05:25,05:35,08:00,07:57,CST
+1393016068,false,On Time,859,false,TPE,null,null,107A,3,3h 26m,APJ,32N,06:00,05:52,08:35,08:18,CST
+1393016068,false,On Time,859,false,TPE,null,null,107A,3,3h 26m,APJ,32N,06:00,05:52,08:35,08:18,CST
+1392951069,false,On Time,21,false,OKA,null,null,54,2,2h 33m,SNJ,73H,06:10,06:20,08:50,08:53,JST
+1393020384,false,On Time,987,false,CTS,null,null,58,2,1h 31m,NH,76E,06:20,06:22,07:50,07:53,JST
+1393020382,false,On Time,985,false,ITM,null,null,64,2,1h 5m,NH,32Q,06:20,06:26,07:25,07:31,JST
+1392972205,false,On Time,1,false,FUK,null,null,20,1,1h 56m,BC,73H,06:20,06:26,08:15,08:22,JST
+1393006199,false,On Time,623,false,KMJ,null,null,6,1,1h 49m,JL,73H,06:20,06:20,08:00,08:09,JST
+1393019776,false,On Time,239,false,FUK,null,Operated by ANA Wings on behalf of ANA,60,2,1h 53m,NH,73H,06:20,06:21,08:05,08:14,JST
+1393005883,false,On Time,303,false,FUK,null,null,9,1,1h 48m,JL,359,06:25,06:30,08:10,08:18,JST
+1392951086,false,On Time,91,false,OIT,null,null,52,2,1h 31m,SNJ,73H,06:25,06:28,07:55,07:59,JST
+1393019904,false,On Time,461,false,OKA,null,Operated by ANA Wings on behalf of ANA,62,2,2h 38m,NH,73H,06:25,06:33,09:00,09:11,JST
+1393006208,false,On Time,641,false,KOJ,null,null,5B,1,1h 38m,JL,73H,06:25,06:32,08:05,08:10,JST
+1393005477,false,Delayed,101,false,ITM,null,null,14,1,1h 7m,JL,788,06:30,06:52,07:30,07:59,JST
+1392972299,false,On Time,511,false,OKA,null,null,21,1,2h 44m,BC,73H,06:30,06:33,09:10,09:17,JST
+1393006302,false,Delayed,901,false,OKA,null,null,10,1,2h 33m,JL,359,06:30,06:53,08:55,09:26,JST
+1392972262,false,On Time,301,false,KOJ,null,null,19,1,1h 56m,BC,73H,06:35,06:36,08:25,08:32,JST
+1392951396,false,On Time,41,false,FUK,null,null,1,1,1h 55m,7G*,32N,06:35,06:35,08:30,08:30,JST
+1393006097,false,Delayed,501,false,CTS,null,null,12,1,1h 44m,JL,763,06:35,06:44,08:05,08:28,JST
+1393045239,false,On Time,625,false,HKG,null,null,143,3,4h 35m,UO,32Q,06:35,06:18,10:15,09:53,HKT
+1393020063,false,On Time,619,false,KOJ,null,Operated by ANA Wings on behalf of ANA,null,2,1h 52m,NH,73H,06:40,06:45,08:25,08:37,JST
+1393019894,false,On Time,411,false,UKB,null,null,51,2,1h 10m,NH,32Q,06:40,06:43,07:50,07:53,JST
+1393020057,false,On Time,631,false,IWK,null,null,505,2,1h 27m,NH,32N,06:40,06:47,08:10,08:14,JST
+1393005500,false,On Time,141,false,AOJ,null,null,15,1,1h 13m,JL,763,06:45,06:48,08:00,08:01,JST
+1392951108,false,On Time,51,false,KMI,null,null,500,2,1h 48m,SNJ,73H,06:45,06:51,08:25,08:39,JST
+1393020374,false,Delayed,993,false,OKA,null,null,61,2,2h 35m,NH,76E,06:45,07:00,09:20,09:35,JST
+1393019541,false,On Time,1075,false,FUK,null,null,59,2,1h 48m,NH,789,06:45,06:50,08:30,08:38,JST
+1392972354,false,On Time,703,false,CTS,null,null,22,1,1h 36m,BC,73H,06:45,06:47,08:20,08:23,JST
+1393006068,false,On Time,431,false,MYJ,null,null,5A,1,1h 28m,JL,73H,06:50,06:49,08:10,08:17,JST
+1393019980,false,On Time,531,false,TAK,null,null,null,2,1h 20m,NH,32Q,06:55,06:58,08:10,08:18,JST
+1393026194,false,On Time,26,false,SYD,null,null,147,3,9h 41m,QF,333,06:55,07:23,18:00,18:04,AEST
+1393000196,false,On Time,11,false,CTS,null,null,55,2,1h 23m,HD,76E,06:55,07:00,08:25,08:23,JST
+1393000222,false,On Time,61,false,OBO,null,null,503,2,1h 33m,HD,73W,06:55,07:06,08:25,08:39,JST
+1393019845,false,On Time,381,false,YGJ,null,null,509,2,1h 16m,NH,32B,06:55,06:58,08:10,08:14,JST
+1393019805,false,On Time,291,false,TTJ,null,Operated by ANA Wings on behalf of ANA,51,2,1h 15m,NH,73H,07:00,07:05,08:15,08:20,JST
+1393006080,false,On Time,453,false,TKS,null,null,13,1,1h 10m,JL,763,07:00,07:01,08:10,08:11,JST
+1393020007,false,Delayed,51,false,CTS,null,null,65,2,1h 35m,NH,781,07:00,07:16,08:30,08:51,JST
+1393000263,false,On Time,81,false,AKJ,null,null,56,2,1h 33m,HD,76E,07:00,07:13,08:35,08:46,JST
+1393019626,false,On Time,13,false,ITM,null,null,63,2,1h 4m,NH,781,07:00,06:58,08:05,08:02,JST
+1393005511,false,On Time,161,false,AXT,null,Operated by J-Air on behalf of JAL,32,1,57m,JL,E90,07:00,07:03,08:05,08:00,JST
+1393006174,false,On Time,565,false,MMB,null,null,18,1,1h 44m,JL,73H,07:05,07:05,08:50,08:49,JST
+1393006371,false,Delayed,971,false,ISG,null,null,3,1,2h 51m,JL,763,07:05,07:20,09:50,10:11,JST
+1393020131,false,On Time,671,false,HIJ,null,null,57,2,1h 17m,NH,78P,07:05,07:07,08:25,08:24,JST
+1393005879,false,On Time,305,false,FUK,null,null,8,1,1h 51m,JL,788,07:05,07:06,08:45,08:57,JST
+1392951124,false,On Time,31,false,NGS,null,null,54,2,1h 54m,SNJ,73H,07:05,07:09,08:55,09:03,JST
+1393005874,false,On Time,277,false,IZO,null,null,4,1,1h 18m,JL,763,07:10,07:12,08:30,08:30,JST
+1393005614,false,On Time,183,false,KMQ,null,null,11,1,58m,JL,73H,07:10,07:13,08:10,08:11,JST
+1392951028,false,On Time,11,false,KMJ,null,null,502,2,1h 38m,SNJ,73H,07:15,07:19,09:00,08:57,JST
+1393020027,false,On Time,583,false,MYJ,null,null,53,2,1h 29m,NH,78P,07:15,07:25,08:40,08:54,JST
+1393000202,false,On Time,57,false,HKD,null,null,504,2,1h 14m,HD,73W,07:15,07:24,08:35,08:38,JST
+1393019922,false,On Time,451,false,HSG,null,Operated by ANA Wings on behalf of ANA,null,2,1h 52m,NH,73H,07:15,07:17,09:05,09:09,JST
+1393019881,false,On Time,393,false,SYO,null,null,507,2,52m,NH,32Q,07:15,07:18,08:15,08:10,JST
+1393006090,false,On Time,503,false,CTS,null,null,16,1,1h 31m,JL,359,07:15,07:27,08:50,08:58,JST
+1392972217,false,On Time,101,false,UKB,null,null,20,1,1h 15m,BC,73H,07:20,07:19,08:35,08:33,JST
+1392951407,false,On Time,11,false,UBJ,null,null,2,1,1h 45m,7G*,32A,07:20,07:24,09:00,09:09,JST
+1393005679,false,On Time,221,false,KIX,null,null,17,1,1h 23m,JL,73H,07:20,07:20,08:35,08:43,JST
+1393006312,false,Delayed,903,false,OKA,null,null,7,1,2h 31m,JL,359,07:20,07:43,09:50,10:14,JST
+1393005590,false,On Time,175,false,GAJ,null,Operated by J-Air on behalf of JAL,31,1,54m,JL,E90,07:20,07:20,08:15,08:14,JST
+1393005768,false,On Time,253,false,HIJ,null,null,6,1,1h 18m,JL,73H,07:25,07:26,08:45,08:44,JST
+1393020357,false,On Time,93,false,KIX,null,null,58,2,1h 24m,NH,32B,07:25,07:23,08:40,08:47,JST
+1393006188,false,On Time,605,false,NGS,null,null,88,1,1h 49m,JL,73H,07:30,07:38,09:15,09:27,JST
+1393019773,false,On Time,241,false,FUK,null,null,60,2,1h 51m,NH,773,07:30,07:32,09:20,09:23,JST
+1393005479,false,On Time,103,false,ITM,null,null,12,1,1h 2m,JL,763,07:30,07:35,08:35,08:37,JST
+1393019906,false,On Time,463,false,OKA,null,null,64,2,2h 29m,NH,78P,07:30,07:43,10:05,10:12,JST
+1393006102,false,Delayed,491,false,KCZ,null,null,85,1,1h 27m,JL,73H,07:30,07:38,08:50,09:05,JST
+1393006159,false,On Time,585,false,HKD,null,null,21,1,1h 19m,JL,763,07:30,07:41,08:50,09:00,JST
+1392972269,false,On Time,3,false,FUK,null,null,19,1,1h 58m,BC,7M8,07:35,07:34,09:30,09:32,JST
+1393019753,false,Delayed,1891,false,HAC,null,Operated by ANA Wings on behalf of ANA,501,2,59m,NH,73H,07:35,07:57,08:30,08:56,JST
+1393006123,false,On Time,551,false,AKJ,null,null,10,1,1h 33m,JL,73H,07:35,07:42,09:10,09:15,JST
+1392951452,false,On Time,73,false,KKJ,null,null,1,1,1h 39m,7G*,32A,07:40,07:35,09:20,09:14,JST
+1393000207,false,On Time,71,false,KUH,null,null,55,2,1h 32m,HD,73W,07:40,07:40,09:20,09:12,JST
+1393020056,false,Delayed,603,false,KMI,null,null,506,2,1h 45m,NH,32Q,07:40,07:51,09:20,09:36,JST
+1393006184,false,On Time,573,false,OBO,null,null,14,1,1h 33m,JL,76W,07:45,07:55,09:15,09:28,JST
+1393006135,false,On Time,541,false,KUH,null,null,34,1,1h 33m,JL,73H,07:45,08:06,09:25,09:39,JST
+1392972295,false,On Time,513,false,OKA,null,null,22,1,2h 55m,BC,73H,07:45,07:48,10:30,10:43,JST
+1393019884,false,On Time,401,false,AXT,null,null,505,2,55m,NH,32N,07:45,07:53,08:50,08:48,JST
+1393005597,false,On Time,213,false,SHM,null,null,33,1,1h 18m,JL,73H,07:45,07:48,08:55,09:06,JST
+1393019548,false,On Time,1079,false,MMY,null,null,58,2,2h 57m,NH,76E,07:45,07:50,10:35,10:47,JST
+1393006062,false,On Time,47,false,HEL,null,null,112,3,13h 20m,JL,77W,07:50,07:48,15:10,15:08,EEST
+1393020142,false,Delayed,651,false,OKJ,null,Operated by ANA Wings on behalf of ANA,503,2,1h 18m,NH,73H,07:50,08:08,09:05,09:26,JST
+1392951101,false,On Time,71,false,KOJ,null,null,52,2,1h 50m,SNJ,73H,07:50,07:47,09:40,09:37,JST
+1393006075,false,On Time,475,false,TAK,null,null,5B,1,1h 21m,JL,73H,07:50,07:51,09:05,09:12,JST
+1392975616,false,On Time,223,false,TSA,null,null,105,3,3h 16m,CI,333,07:55,07:47,10:30,10:03,CST
+1393020249,false,On Time,791,false,OIT,null,null,47,2,1h 43m,NH,32Q,07:55,07:58,09:30,09:41,JST
+1393006238,false,On Time,661,false,OIT,null,null,4,1,1h 33m,JL,73H,08:00,08:11,09:30,09:44,JST
+1393005885,false,On Time,307,false,FUK,null,null,9,1,1h 53m,JL,359,08:00,08:02,09:45,09:55,JST
+1393006203,false,Delayed,625,false,KMJ,null,null,11,1,1h 46m,JL,73H,08:00,08:11,09:40,09:57,JST
