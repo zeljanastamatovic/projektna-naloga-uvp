@@ -4,11 +4,12 @@ import re
 import csv
 
 
-niz = ['flightId', 'canceled', "finalStatus", "flightNumber", "diverted", "arrivalAirportFS", "divertedAirport", "operatedBy", "gate", "terminal", 'flightDuration', 'carrier', 'equipment', 'depTimeScheduled', 'depTimeActual', 'arrTimeScheduled', 'arrTimeActual', 'timezone']
+header = ['flightId', 'canceled', "finalStatus", "flightNumber", "diverted", "arrivalAirportFS", "divertedAirport", "operatedBy", "gate", "terminal", 'flightDuration', 'carrier', 'equipment', 'depTimeScheduled', 'depTimeActual', 'arrTimeScheduled', 'arrTimeActual', 'timezone']
+n = []
 
 def get_departures():
     for i in range(4):
-        odgovor = requests.get(f'https://www.flightstats.com/v2/flight-tracker/departures/HND/?year=2026&month=7&date=2&hour={6*i}')
+        odgovor = requests.get(f'https://www.flightstats.com/v2/flight-tracker/departures/HND/?year=2026&month=7&date=6&hour={6*i}')
         print(odgovor.status_code)
         vsebina = odgovor.text
         with open(f"hndDepartures{i}.html","w",encoding="utf-8") as dat:
@@ -29,8 +30,6 @@ def txt_file():
                         print(url, file=d)
 
 
-#get_departures()
-#txt_file()
 
 def nmp():
     with open("urls.txt",encoding='utf8')as dat:
@@ -63,51 +62,92 @@ def izdvoj(niz, vsebina):
 
 
 def staviuslovar(vsebina):
-    slovar = {'flightId':[], 'canceled':[], "finalStatus":[], "flightNumber":[], "diverted":[], "arrivalAirportFS":[], "divertedAirport":[], "operatedBy":[], "gate":[], "terminal":[], 'flightDuration':[], 'carrier': [], 'equipment': [], 'depTimeScheduled': [], 'depTimeActual': [], 'arrTimeScheduled': [], 'arrTimeActual': [], 'timezone': []}
+    slovar = {'flightId': [], 'canceled': [], "finalStatus": [], "flightNumber": [], "diverted": [], "arrivalAirportFS": [], "divertedAirport": [], "operatedBy": [], "gate": [], "terminal": [], 'flightDuration': [], 'carrier': [], 'equipment': [], 'depTimeScheduled': [], 'depTimeActual': [], 'arrTimeScheduled': [], 'arrTimeActual': [], 'timezone': []}
     niz1 = ['flightId', 'canceled', "finalStatus", "flightNumber", "diverted", "arrivalAirportFS", "divertedAirport", "operatedBy", "gate", "terminal", 'flightDuration']
     for j in niz1:
+        #print(j)
         slovar[j] = izdvoj(j, vsebina)
-        print(j)
+        
         
     slovar['carrier'] = izdvoj('fs',re.findall('"carrier":{"name":.*?}',vsebina)[0])
     slovar['equipment'] = izdvoj('iata',re.findall('"equipment":{.*?}',vsebina)[0])
     
     
     ##get_departures
-    slovar['depTimeScheduled'] = izdvoj('time24',re.findall('"time24":.*?},',vsebina)[0])
-    slovar['depTimeActual'] = izdvoj('time24',re.findall('"time24":.*?},',vsebina)[1])
-    slovar['arrTimeScheduled'] = izdvoj('time24',re.findall('"time24":.*?},',vsebina)[2])
-    slovar['arrTimeActual'] = izdvoj('time24',re.findall('"time24":.*?},',vsebina)[3])
-    slovar['timezone'] = izdvoj('timezone',re.findall('"timezone":.*?,',vsebina)[2])
-    return slovar
+    slovar['depTimeScheduled'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[0])
+    slovar['depTimeActual'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[1])
+    slovar['arrTimeScheduled'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[2])
+    slovar['arrTimeActual'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[3])
+    slovar['timezone'] = izdvoj('timezone', re.findall('"timezone":.*?,', vsebina)[2])
     #print(slovar)
+    return slovar
+    
 
-   
-with open("urls.txt", encoding='utf8')as dat:
-    for i in range(3):
-        v = dat.readline()
-    with open("flights.csv", "w") as f:
-        writer = csv.DictWriter(f, fieldnames=niz)
-        writer.writeheader()
-        i = 1
-        for vrstica in dat:
-            print(i)
-            print(vrstica)
-            i += 1
-            vrstica = vrstica[:len(vrstica)-1]
-            vrstica = vrstica.replace('\\u0026', '&')
-            odgovor = requests.get(vrstica)
-            while odgovor.status_code == 504:
+def glavni():
+    with open("urls.txt", encoding='utf8')as dat:
+        for i in range(3):
+            v = dat.readline()
+            
+        with open("flights.csv", 'w', newline='',encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=header)
+            writer.writeheader()
+            
+            for vrstica in dat:
+            
+                
+                vrstica = vrstica[:len(vrstica)-1]
+                vrstica = vrstica.replace('\\u0026', '&')
                 odgovor = requests.get(vrstica)
-                time.sleep(2)
-            vsebina = odgovor.text
-            writer.writerow(staviuslovar(vsebina))
+                print(i)
+                i += 1
+                print(vrstica)
+                while odgovor.status_code == 504:
+                    time.sleep(4)
+                    odgovor = requests.get(vrstica)
+                print('prvi')
+                print(odgovor.status_code)
+                if odgovor.status_code == 403:
+                    time.sleep(180)
+                    odgovor = requests.get(vrstica)
+                print('drugi')
+                print(odgovor.status_code)
+                vsebina = odgovor.text
+                if odgovor.status_code == 200:
+                    writer.writerow(staviuslovar(vsebina))
+                else:
+                    print(odgovor.status_code)
+                    print('jokjok')
+                    break
 
 
 
 
+def csv_file(niz1, niz2):
+    with open("flights.csv", 'w', newline='',encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=niz2)
+        writer.writeheader()
+        for film in niz1:
+            writer.writerow(film)
+            
+            
 
 
+
+glavni()
+#vrstica = ''          
+#vrstica = vrstica.replace('\\u0026', '&') 
+          
+#odgovor = requests.get('https://www.flightstats.com/v2/flight-tracker/JL/479?year=2026&month=7&date=6&flightId=1393848000')
+#print(odgovor.status_code)
+#v = odgovor.text
+#with open('t.html','w',encoding='utf-8') as dat:
+#    print(v,file=dat)
+#staviuslovar(v)
+
+
+#with open("flights.csv", "w") as f:
+#        writer = csv.DictWriter(f, fieldnames=niz)
+#        writer.writeheader()
 
  
             
