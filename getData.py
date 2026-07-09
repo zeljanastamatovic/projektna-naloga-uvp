@@ -8,20 +8,19 @@ header = ['flightId', 'canceled', "finalStatus", "flightNumber", "diverted", "ar
 sezArrival = []
 sezCarrier = []
 sezEquipment = []
-datum = {'leto': 2026, 'mesec': 7, 'dan': 6}
-obdobje = 6
 headerArrival = ["fs", 'iata', 'name', 'city', 'country', 'timeZoneRegionName', 'regionName']
 headerCarrier = ['fs', 'name']
 headerEquipment = ['iata', 'name', 'title']
 
+datum = {'leto': 2026, 'mesec': 7, 'dan': 6} # datum mora biti najvise 3 dana pre trenutnog datuma
+obdobje = 6 # 4 moznosti: 0 (med 00:00 in 6:00), 6 (med 6:00 in 12:00), 12 (med 12:00 in 18:00), 18 (med 18:00 in 24:00)
 
 def get_departures(datum, obdobje):
-    for i in range(4):
-        odgovor = requests.get(f'https://www.flightstats.com/v2/flight-tracker/departures/HND/?year={datum['leto']}&month={datum['mesec']}&date={datum['dan']}&hour={obdobje}')
-        print(odgovor.status_code)
-        vsebina = odgovor.text
-        with open(f"hndDepartures{i}.html", "w", encoding="utf-8") as dat:
-            print(vsebina, file=dat)
+    odgovor = requests.get(f'https://www.flightstats.com/v2/flight-tracker/departures/HND/?year={datum['leto']}&month={datum['mesec']}&date={datum['dan']}&hour={obdobje}')
+    print(odgovor.status_code)
+    vsebina = odgovor.text
+    with open(f"hndDepartures.html", "w", encoding="utf-8") as dat:
+        print(vsebina, file=dat)
 
 
 def txt_file():
@@ -43,6 +42,15 @@ def izdvoj(niz, vsebina):
     p = re.findall(f'"{niz}"'+r':.*?[,}]', vsebina)[0]
     n = p[p.find(':')+1:len(p)-1]
     
+    if niz == 'flightDuration':
+        if 'h' in n:
+            if 'm' in n:
+                return int(n[1:n.find('h')]) * 60 + int(n[n.find(' ') + 1: n.find('m')])
+            else:
+                return int(n[1:n.find('h')]) * 60
+        else:
+            return int(n[1:n.find('m')])
+    
     try:
         return int(n) 
     except:
@@ -54,14 +62,24 @@ def izdvoj(niz, vsebina):
 def staviuslovar(vsebina):
     slovar = {'flightId': [], 'canceled': [], "finalStatus": [], "flightNumber": [], "diverted": [], "arrivalAirportFS": [], "divertedAirport": [], "operatedBy": [], "gate": [], "terminal": [], 'flightDuration': [], 'carrier': [], 'equipment': [], 'depTimeScheduled': [], 'depTimeActual': [], 'arrTimeScheduled': [], 'arrTimeActual': [], 'timezone': []}
     niz1 = ['flightId', 'canceled', "finalStatus", "flightNumber", "diverted", "arrivalAirportFS", "divertedAirport", "operatedBy", "gate", "terminal", 'flightDuration']
+    
+    slovar['depTimeScheduled'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[0])
+    slovar['depTimeActual'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[1])
+    slovar['arrTimeScheduled'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[2])
+    slovar['arrTimeActual'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[3])
+    slovar['timezone'] = izdvoj('timezone', re.findall('"timezone":.*?,', vsebina)[2])
+    
     for j in niz1:
         if j == 'divertedAirport':
             p = izdvoj(j, vsebina)
             if p == 'null':
                 slovar[j] = p
             else:
-                print(p)
                 slovar[j] = p[7:10]
+                slovar['arrTimeActual'], slovar['depTimeActual'] = \
+                    slovar['depTimeActual'], slovar['arrTimeActual']
+                slovar['arrTimeScheduled'], slovar['depTimeScheduled'] = \
+                    slovar['depTimeScheduled'], slovar['arrTimeScheduled']
         else:
             slovar[j] = izdvoj(j, vsebina)
         
@@ -71,11 +89,7 @@ def staviuslovar(vsebina):
     
     
     ##get_departures
-    slovar['depTimeScheduled'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[0])
-    slovar['depTimeActual'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[1])
-    slovar['arrTimeScheduled'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[2])
-    slovar['arrTimeActual'] = izdvoj('time24', re.findall('"time24":.*?},', vsebina)[3])
-    slovar['timezone'] = izdvoj('timezone', re.findall('"timezone":.*?,', vsebina)[2])
+    
     #print(slovar)
     return slovar
 
@@ -117,7 +131,7 @@ def glavni():
                     odgovor = requests.get(vrstica)
 
                 if odgovor.status_code == 403:
-                    time.sleep(180)
+                    time.sleep(90)
                     odgovor = requests.get(vrstica)
             
                 vsebina = odgovor.text
@@ -129,15 +143,16 @@ def csv_file(niz1, niz2, file):
     with open(file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=niz2)
         writer.writeheader()
-        for film in niz1:
-            writer.writerow(film)
+        for i in niz1:
+            writer.writerow(i)
             
             
-
-#glavni()
-#csv_file(sezArrival, headerArrival, 'arrivalAirport.csv')
-#csv_file(sezEquipment, headerEquipment, 'equipment.csv')
-#csv_file(sezCarrier, headerCarrier, 'carrier.csv')
+#get_departures(datum, obdobje)
+#txt_file()
+glavni()
+csv_file(sezArrival, headerArrival, 'arrivalAirport.csv')
+csv_file(sezEquipment, headerEquipment, 'equipment.csv')
+csv_file(sezCarrier, headerCarrier, 'carrier.csv')
 
 
 #vrstica = ''          
@@ -146,6 +161,6 @@ def csv_file(niz1, niz2, file):
 #odgovor = requests.get('https://www.flightstats.com/v2/flight-tracker/CZ/3086?year=2026&month=7&date=6&flightId=1393818227')
 #print(odgovor.status_code)
 #v = odgovor.text
-#with open('t.html','w',encoding='utf-8') as dat:
-#    print(v,file=dat)
-#print(izdvoj_arrivalAirport(v, headerArrival, 'arrivalAirport'))
+#print(staviuslovar(v))
+
+
