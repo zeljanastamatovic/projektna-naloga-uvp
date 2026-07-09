@@ -1,4 +1,7 @@
 flightId,canceled,finalStatus,flightNumber,diverted,arrivalAirportFS,divertedAirport,operatedBy,gate,terminal,flightDuration,carrier,equipment,depTimeScheduled,depTimeActual,arrTimeScheduled,arrTimeActual,timezone
+1393858058,false,On Time,859,false,TPE,null,null,107A,3,3h 21m,APJ,32N,06:00,06:01,08:35,08:22,CST
+1393792501,false,On Time,21,false,OKA,null,null,55,2,2h 35m,SNJ,73H,06:10,06:10,08:50,08:45,JST
+1393848104,false,On Time,623,false,KMJ,null,null,6,1,1h 40m,JL,73H,06:20,06:17,08:00,07:57,JST
 1393862415,false,On Time,987,false,CTS,null,null,64,2,1h 36m,NH,76E,06:20,06:26,07:50,08:02,JST
 1393862413,false,On Time,985,false,ITM,null,null,58,2,1h 2m,NH,32Q,06:20,06:18,07:25,07:20,JST
 1393813642,false,On Time,1,false,FUK,null,null,20,1,1h 47m,BC,73H,06:20,06:21,08:15,08:08,JST
@@ -215,7 +218,7 @@ flightId,canceled,finalStatus,flightNumber,diverted,arrivalAirportFS,divertedAir
 1393862136,false,On Time,605,false,KMI,null,null,57,2,1h 40m,NH,32Q,10:45,10:51,12:25,12:31,JST
 1393847435,false,On Time,12,false,DFW,null,null,114,3,11h 23m,JL,351,10:45,10:55,08:35,08:18,CDT
 1393847488,false,On Time,155,false,MSJ,null,Operated by J-Air on behalf of JAL,8,1,1h 15m,JL,E90,10:45,10:54,12:05,12:09,JST
-1393818227,false,Diverted,3086,true,CAN,"{""fs"":""SZX""",null,null,2,6h 8m,CZ,32Q,14:30,15:48,10:45,10:40,JST
+1393818227,false,Diverted,3086,true,CAN,SZX,null,null,2,6h 8m,CZ,32Q,14:30,15:48,10:45,10:40,JST
 1393862346,false,Delayed,847,false,BKK,null,Operated by AirJapan on behalf of ANA,68,2,5h 56m,NH,789,10:50,14:06,15:30,18:02,+07
 1393861604,false,On Time,110,false,JFK,null,null,73,2,12h 32m,NH,77W,10:50,10:49,11:00,10:21,EDT
 1393862313,false,On Time,793,false,OIT,null,Operated by ANA Wings on behalf of ANA,null,2,1h 33m,NH,73H,10:50,10:58,12:25,12:31,JST

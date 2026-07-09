@@ -1,0 +1,80 @@
+fs,iata,name,city,country,timeZoneRegionName,regionName
+TPE,TPE,Taiwan Taoyuan International Airport,Taipei,TW,Asia/Taipei,Asia
+OKA,OKA,Naha Airport,Okinawa,JP,Asia/Tokyo,Asia
+KMJ,KMJ,Kumamoto Airport,Kumamoto,JP,Asia/Tokyo,Asia
+CTS,CTS,New Chitose Airport,Sapporo,JP,Asia/Tokyo,Asia
+ITM,ITM,Osaka Itami International Airport,Osaka,JP,Asia/Tokyo,Asia
+FUK,FUK,Fukuoka Airport,Fukuoka,JP,Asia/Tokyo,Asia
+OIT,OIT,Oita Airport,Oita,JP,Asia/Tokyo,Asia
+KOJ,KOJ,Kagoshima Airport,Kagoshima,JP,Asia/Tokyo,Asia
+HKG,HKG,Hong Kong International Airport,Hong Kong,HK,Asia/Hong_Kong,Asia
+UKB,UKB,Kobe Airport,Kobe,JP,Asia/Tokyo,Asia
+RJOI,IWK,Iwakuni Kintaikyo Airport,Iwakuni,JP,Asia/Tokyo,Asia
+AOJ,AOJ,Aomori Airport,Aomori,JP,Asia/Tokyo,Asia
+KMI,KMI,Miyazaki Airport,Miyazaki,JP,Asia/Tokyo,Asia
+MYJ,MYJ,Matsuyama Airport,Matsuyama,JP,Asia/Tokyo,Asia
+YGJ,YGJ,Yonago Miho Airport,Yonago,JP,Asia/Tokyo,Asia
+OBO,OBO,Tokachi Obihiro Airport,Obihiro,JP,Asia/Tokyo,Asia
+SYD,SYD,Sydney Kingsford Smith International Airport,Sydney,AU,Australia/Sydney,Oceania
+TAK,TAK,Takamatsu Airport,Takamatsu,JP,Asia/Tokyo,Asia
+AKJ,AKJ,Asahikawa Airport,Asahikawa,JP,Asia/Tokyo,Asia
+AXT,AXT,Akita Airport,Akita,JP,Asia/Tokyo,Asia
+TKS,TKS,Tokushima Awaodori Airport,Tokushima,JP,Asia/Tokyo,Asia
+TTJ,TTJ,Tottori Airport,Tottori,JP,Asia/Tokyo,Asia
+ISG,ISG,Ishigaki Airport,Ishigaki,JP,Asia/Tokyo,Asia
+HIJ,HIJ,Hiroshima Airport,Hiroshima,JP,Asia/Tokyo,Asia
+MMB,MMB,Memanbetsu Airport,Memanbetsu,JP,Asia/Tokyo,Asia
+NGS,NGS,Nagasaki Airport,Nagasaki,JP,Asia/Tokyo,Asia
+IZO,IZO,Izumo Airport,Izumo,JP,Asia/Tokyo,Asia
+KMQ,KMQ,Komatsu Airport,Komatsu,JP,Asia/Tokyo,Asia
+HKD,HKD,Hakodate Airport,Hakodate,JP,Asia/Tokyo,Asia
+HSG,HSG,Saga Airport,Saga,JP,Asia/Tokyo,Asia
+SYO,SYO,Shonai Airport,Shonai,JP,Asia/Tokyo,Asia
+UBJ,UBJ,Yamaguchi Ube Airport,Ube,JP,Asia/Tokyo,Asia
+GAJ,GAJ,Yamagata Airport,Yamagata,JP,Asia/Tokyo,Asia
+KIX,KIX,Kansai International Airport,Osaka,JP,Asia/Tokyo,Asia
+KCZ,KCZ,Kochi Ryoma Airport,Kochi,JP,Asia/Tokyo,Asia
+HAC,HAC,Hachijojima Airport,Hachijo Jima,JP,Asia/Tokyo,Asia
+KKJ,KKJ,Kitakyushu Airport,Kitakyushu,JP,Asia/Tokyo,Asia
+KUH,KUH,Tancho Kushiro Airport,Kushiro,JP,Asia/Tokyo,Asia
+MMY,MMY,Miyako Airport,Miyakojima,JP,Asia/Tokyo,Asia
+SHM,SHM,Nanki Shirahama Airport,Shirahama,JP,Asia/Tokyo,Asia
+OKJ,OKJ,Okayama Airport,Okayama,JP,Asia/Tokyo,Asia
+TSA,TSA,Taipei Songshan Airport,Taipei,TW,Asia/Taipei,Asia
+MSJ,MSJ,Misawa Airport,Misawa,JP,Asia/Tokyo,Asia
+NGO,NGO,Nagoya Chubu Centrair International Airport,Nagoya,JP,Asia/Tokyo,Asia
+GMP,GMP,Seoul Gimpo International Airport,Seoul,KR,Asia/Seoul,Asia
+ISL,IST,Istanbul Airport,Istanbul,TR,Europe/Istanbul,Europe
+PEK,PEK,Beijing Capital International Airport,Beijing,CN,Asia/Shanghai,Asia
+PVG,PVG,Shanghai Pudong International Airport,Shanghai,CN,Asia/Shanghai,Asia
+CAN,CAN,Guangzhou Baiyun International Airport,Guangzhou,CN,Asia/Shanghai,Asia
+BOM,BOM,Mumbai Chhatrapati Shivaji International Airport,Mumbai,IN,Asia/Kolkata,Asia
+CDG,CDG,Paris Charles de Gaulle Airport,Paris,FR,Europe/Paris,Europe
+IWJ,IWJ,Hagi Iwami Airport,Masuda,JP,Asia/Tokyo,Asia
+LHR,LHR,London Heathrow Airport,London,GB,Europe/London,Europe
+SIN,SIN,Singapore Changi Airport,Singapore,SG,Asia/Singapore,Asia
+NTQ,NTQ,Noto Airport,Wajima,JP,Asia/Tokyo,Asia
+ONJ,ONJ,Odate Noshiro Airport,Odate Noshiro,JP,Asia/Tokyo,Asia
+SHA,SHA,Shanghai Hongqiao International Airport,Shanghai,CN,Asia/Shanghai,Asia
+MUC,MUC,Munich Franz Joseph Strauss Airport,Munich,DE,Europe/Berlin,Europe
+DLC,DLC,Dalian Zhoushuizi International Airport,Dalian,CN,Asia/Shanghai,Asia
+FRA,FRA,Frankfurt Airport,Frankfurt,DE,Europe/Berlin,Europe
+MNL,MNL,Manila Ninoy Aquino International Airport,Manila,PH,Asia/Manila,Asia
+TAO,TAO,Qingdao Jiaodong International Airport,Qingdao,CN,Asia/Shanghai,Asia
+TOY,TOY,Toyama Airport,Toyama,JP,Asia/Tokyo,Asia
+EWR,EWR,Newark Liberty International Airport,Newark,US,America/New_York,North America
+CGK,CGK,Jakarta Soekarno-Hatta International Airport,Jakarta,ID,Asia/Jakarta,Asia
+IAD,IAD,Washington Dulles International Airport,Dulles,US,America/New_York,North America
+IAH,IAH,Houston George Bush Intercontinental Airport,Houston,US,America/Chicago,North America
+MBE,MBE,Monbetsu Airport,Monbetsu,JP,Asia/Tokyo,Asia
+BKK,BKK,Bangkok Suvarnabhumi International Airport,Bangkok,TH,Asia/Bangkok,Asia
+ORD,ORD,Chicago O'Hare International Airport,Chicago,US,America/Chicago,North America
+DFW,DFW,Dallas Fort Worth International Airport,Dallas,US,America/Chicago,North America
+JFK,JFK,New York John F. Kennedy International Airport,New York,US,America/New_York,North America
+DEL,DEL,Delhi Indira Gandhi International Airport,Delhi,IN,Asia/Kolkata,Asia
+WKJ,WKJ,Wakkanai Airport,Wakkanai,JP,Asia/Tokyo,Asia
+SHI,SHI,Shimojishima Airport,Miyakojima,JP,Asia/Tokyo,Asia
+CPH,CPH,Copenhagen Airport,Copenhagen,DK,Europe/Copenhagen,Europe
+SZX,SZX,Shenzhen Bao'an International Airport,Shenzhen,CN,Asia/Shanghai,Asia
+ASJ,ASJ,Amami Oshima Airport,Amami O Shima,JP,Asia/Tokyo,Asia
+LAX,LAX,Los Angeles International Airport,Los Angeles,US,America/Los_Angeles,North America
