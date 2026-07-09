@@ -18,16 +18,16 @@ def get_departures():
 
 def txt_file():
     with open('urls.txt',"w",encoding='utf-8') as d:
-        for i in range(4):
 
-            with open(f"hndDepartures{i}.html",encoding="utf-8") as dat:
-                vsebina = dat.read()
-                indexes = [x.start() for x in re.finditer('"url"', vsebina)]
-                for index in indexes:
-                    url = "https://www.flightstats.com/v2" + vsebina[index + 7: index + 7 +(vsebina[index + 7:]).find('"')]
-                    ## gleda da li je code share
-                    if vsebina[index + 7: index + 7 + (vsebina[index + 7:]).find('}}')] < vsebina[index + 7: index + 7 +(vsebina[index + 7:]).find('Codeshare')]:
-                        print(url, file=d)
+
+        with open(f"hndDepartures1.html", encoding="utf-8") as dat:
+            vsebina = dat.read()
+            indexes = [x.start() for x in re.finditer('"url"', vsebina)]
+            for index in indexes:
+                url = "https://www.flightstats.com/v2" + vsebina[index + 7: index + 7 +(vsebina[index + 7:]).find('"')]
+                ## gleda da li je code share
+                if vsebina[index + 7: index + 7 + (vsebina[index + 7:]).find('}}')] < vsebina[index + 7: index + 7 +(vsebina[index + 7:]).find('Codeshare')]:
+                    print(url, file=d)
 
 
 
@@ -132,7 +132,7 @@ def csv_file(niz1, niz2):
             
 
 
-
+txt_file()
 glavni()
 #vrstica = ''          
 #vrstica = vrstica.replace('\\u0026', '&') 
