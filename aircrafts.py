@@ -20,14 +20,13 @@ def aa():
     for najdba in re.finditer(r'<span.*?<', vsebina):
         p = najdba[0][najdba[0].find('>')+1: len(najdba[0])-1]
         if i % 3 == 0:
-            sez[i//3].update({'pax':p[:p.find(' ')]})
+            sez[i//3].update({'pax': p[:p.find(' ')]})
         if i % 3 == 1:
-            sez[i//3].update({'range':p[:p.find(' ')].replace(',','')})
+            sez[i//3].update({'range': p[:p.find(' ')].replace(',','')})
         if i % 3 == 2:
-            sez[i//3].update({'id':p})
+            sez[i//3].update({'id': p})
         i += 1
   
-
 
 aa()
 

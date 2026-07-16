@@ -1,26 +1,20 @@
-iata,name,title
-32N,Airbus A320neo,Actual
-73H,Boeing 737-800 (winglets) Passenger/BBJ2,Actual
-76E,Boeing 767-381(ER) Passenger,Actual
-32Q,Airbus A321neo,Actual
-359,Airbus A350-900,Actual
-32B,Airbus A321 (sharklets),Actual
-763,Boeing 767-300 Passenger,Actual
-789,Boeing 787-9,Actual
-73W,Boeing 737-700 (winglets) Passenger/BBJ1,Actual
-333,Airbus A330-300,Actual
-781,Boeing 787-10,Actual
-E90,Embraer 190,Actual
-77W,Boeing 777-300ER,Actual
-78P,Boeing 787-8,Actual
-788,Boeing 787-8,Actual
-32A,Airbus A320 (sharklets),Actual
-773,Boeing 777-300,Actual
-7M8,Boeing 737MAX 8 Passenger,Actual
-772,Boeing 777-200 / 200ER,Actual
-321,Airbus A321,Actual
-76W,Boeing 767-300 (winglets) Passenger,Actual
-738,Boeing 737-800 Passenger,Actual
-351,Airbus A350-1000,Actual
-320,Airbus A320,Actual
-74H,Boeing 747-8 Passenger,Actual
+name,pax,range,id
+Airbus A350-1000,350,16100,351
+Boeing 787-8,242,13621,788
+Boeing 737-800,162,5765,738
+Boeing 767-300ER,218,11070,763
+Airbus A321neo,180,7400,32Q
+Boeing 787-9,290,14140,789
+Embraer E190,96,4537,E90
+Boeing 747-8 Intercontinental,410,14815,748
+Boeing 737-700,126,6230,73G
+Airbus A350-900,300,15000,359
+Boeing 787-10,330,11910,78J
+Airbus A320-200,150,6100,320
+Airbus A330-300,277,11750,333
+Boeing 767-200ER,181,12200,762
+Airbus A320neo,150,6300,32N
+Boeing 777-200,305,9700,772
+Boeing 737 MAX 8,162,6570,7M8
+Boeing 777-300,368,11135,773
+Airbus A321-200,185,5950,321

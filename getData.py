@@ -54,7 +54,7 @@ def izdvoj(niz, vsebina):
 
 def izdvoj_equipment(vsebina):
     t = re.findall('"equipment"'+':.*?}', vsebina)[0]
-    name = izdvoj('name',t)
+    name = izdvoj('name', t)
     iata = izdvoj('iata', t)
     return find_aircrafts(iata, name)
 
@@ -97,7 +97,7 @@ def staviuslovar(vsebina):
 
 
 def izdvoj_arrivalAirport(vsebina):   
-    t = re.findall('"arrivalAirport"'+':.*?}', vsebina)[0]
+    t = re.findall('"arrivalAirport":.*?}', vsebina)[0]
     slovar = {}
     for i in headerArrival:
         slovar.update({i: izdvoj(i, t)})
@@ -107,16 +107,20 @@ def izdvoj_arrivalAirport(vsebina):
 
 
 def glavni():
+    dat = open("urls.txt", encoding='utf8')
+    n = dat.read().count('\n')
+    dat.close()
     with open("urls.txt", encoding='utf8')as dat:
         f = open("flights.csv", 'w', newline='', encoding='utf-8')
         writer = csv.DictWriter(f, fieldnames=header)
         writer.writeheader()
-        
+        i = 1
         for vrstica in dat:
+            print(f'{i}/{n}')
+            i += 1
             vrstica = vrstica[:len(vrstica)-1]
             vrstica = vrstica.replace('\\u0026', '&')
             odgovor = requests.get(vrstica)
-            print(vrstica)
             while odgovor.status_code == 504:
                 time.sleep(4)
                 odgovor = requests.get(vrstica)
@@ -140,11 +144,11 @@ def csv_file(niz1, niz2, file):
             writer.writerow(i)
             
             
-#get_departures(datum, obdobje)
-#txt_file()
-#glavni()
-#csv_file(sezArrival, headerArrival, 'arrivalAirport.csv')
-#csv_file(sezEquipment, headerEquipment, 'equipment.csv')
+get_departures(datum, obdobje)
+txt_file()
+glavni()
+csv_file(sezArrival, headerArrival, 'arrivalAirport.csv')
+csv_file(sezEquipment, headerEquipment, 'equipment.csv')
 
 
 #vrstica = ''          
