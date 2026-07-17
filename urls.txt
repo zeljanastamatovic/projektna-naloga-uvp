@@ -209,8 +209,8 @@ https://www.flightstats.com/v2/flight-tracker/BC/521?year=2026\u0026month=7\u002
 https://www.flightstats.com/v2/flight-tracker/SQ/633?year=2026\u0026month=7\u0026date=15\u0026flightId=1395718431
 https://www.flightstats.com/v2/flight-tracker/HD/67?year=2026\u0026month=7\u0026date=15\u0026flightId=1395684473
 https://www.flightstats.com/v2/flight-tracker/JL/159?year=2026\u0026month=7\u0026date=15\u0026flightId=1395690695
-https://www.flightstats.com/v2/flight-tracker/7G*/85?year=2026\u0026month=7\u0026date=15\u0026flightId=1395635644
 https://www.flightstats.com/v2/flight-tracker/JL/239?year=2026\u0026month=7\u0026date=15\u0026flightId=1395690404
+https://www.flightstats.com/v2/flight-tracker/7G*/85?year=2026\u0026month=7\u0026date=15\u0026flightId=1395635644
 https://www.flightstats.com/v2/flight-tracker/FM/896?year=2026\u0026month=7\u0026date=15\u0026flightId=1395675422
 https://www.flightstats.com/v2/flight-tracker/JL/569?year=2026\u0026month=7\u0026date=15\u0026flightId=1395691067
 https://www.flightstats.com/v2/flight-tracker/JL/589?year=2026\u0026month=7\u0026date=15\u0026flightId=1395691099

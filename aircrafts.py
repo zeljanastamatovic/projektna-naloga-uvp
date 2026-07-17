@@ -5,6 +5,7 @@ sez = []
 
 
 def find_text():
+    # sprejema podatke o letalih
     odgovor = requests.get('https://planefyi.com/aircraft/')
     v = odgovor.text
     vsebina = v[v.find('Complete database of'):]
@@ -13,6 +14,7 @@ def find_text():
 
 
 def naredi_sez():
+    # vstavi te podatke v sezam
     vsebina = find_text()
     for najdba in re.finditer(r'<h2.*?</', vsebina):
         sez.append({'name': najdba[0][najdba[0].find('>')+1:len(najdba[0])-2]})
@@ -32,6 +34,7 @@ naredi_sez()
 
 
 def find_aircrafts(iata, name):
+    # Za letalo z danim imenom in iata kodo poišče njegov doseg in povprečno število potnikov
     for slovar in sez:
         if slovar['id'] == iata:
             return slovar

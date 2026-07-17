@@ -139,7 +139,6 @@ flightId,finalStatus,flightNumber,arrivalAirportFS,divertedAirport,flightDuratio
 1395706119,Delayed,749,NTQ,null,76,ANA,32N,15:30,15:42,16:30,16:58
 1395656020,On Time,307,KOJ,null,99,Skymark Airlines,738,15:30,15:29,17:20,17:08
 1395706157,On Time,797,OIT,null,100,ANA,738,15:30,15:28,17:05,17:08
-1395656065,On Time,519,OKA,null,154,Skymark Airlines,738,15:35,15:34,18:20,18:08
 1395691348,On Time,93,GMP,null,125,JAL,788,15:35,15:34,17:55,17:39
 1395655998,On Time,109,UKB,null,75,Skymark Airlines,738,15:35,15:37,16:50,16:47
 1395661486,On Time,386,CAN,null,275,China Southern Airlines,773,15:40,16:14,19:15,19:02
@@ -147,6 +146,7 @@ flightId,finalStatus,flightNumber,arrivalAirportFS,divertedAirport,flightDuratio
 1395690969,On Time,461,TKS,null,68,JAL,738,15:40,15:47,16:50,16:55
 1395662384,On Time,648,PKX,null,230,China Southern Airlines,333,15:45,15:55,18:45,18:45
 1395733103,On Time,804,IAD,null,750,United Airlines,772,15:45,15:36,15:50,15:06
+1395684504,Delayed,29,CTS,null,107,Air Do,762,15:50,15:55,17:20,17:42
 1395733154,On Time,876,SFO,null,610,United Airlines,772,15:50,15:41,09:45,09:51
 1395705656,On Time,1895,HAC,null,45,ANA,738,15:50,15:48,16:40,16:33
 1395706093,On Time,697,UBJ,null,90,ANA,32Q,15:50,15:54,17:25,17:24
@@ -207,8 +207,8 @@ flightId,finalStatus,flightNumber,arrivalAirportFS,divertedAirport,flightDuratio
 1395718431,On Time,633,SIN,null,388,Singapore Airlines,773,17:05,17:05,23:05,22:33
 1395684473,Delayed,67,OBO,null,104,Air Do,73G,17:05,17:26,18:40,19:10
 1395690695,On Time,159,MSJ,null,80,JAL,738,17:05,17:15,18:30,18:35
-1395635644,On Time,85,KKJ,null,98,StarFlyer,320,17:10,17:09,18:55,18:47
 1395690404,On Time,239,OKJ,null,68,JAL,738,17:10,17:19,18:25,18:27
+1395635644,On Time,85,KKJ,null,98,StarFlyer,320,17:10,17:09,18:55,18:47
 1395675422,On Time,896,PVG,null,167,Shanghai Airlines,789,17:10,17:43,19:20,19:30
 1395691067,On Time,569,MMB,null,119,JAL,738,17:15,17:17,19:10,19:16
 1395691099,Delayed,589,HKD,null,100,JAL,763,17:15,17:26,18:45,19:06
