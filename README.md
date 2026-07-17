@@ -1,4 +1,4 @@
-#Analiza letov z letališča Haneda v Tokiu <br/>
+# Analiza letov z letališča Haneda v Tokiu <br/>
 
 
 Ta program shranjuje informacije o letih z letališča Tokio Haneda in prikazuje nekaj koristnih informacij.Prvotna ideja je bila, da se podatki obdelujejo ves dan, vendar se izkazalo, da nalaganje traja predolgo. Torej gleda le četrtino dneva.<br/>
@@ -9,6 +9,6 @@ Med vsakim dostopom do URL-ja se pridobljeni podatki zapišejo v slovar (s pomo�
 
 Shranjeni so tudi podatki o letališčih prihoda (v datoteki *arrivalAirport.csv*) in uporabljenih letalih (v datoteki *equipment.csv*). Informacije o letalih so vzete s posebne spletne strani in so na podlagi IATA kode in imena povezane z vsakim uporabljenim letalom, tako da se za vsako uporabljeno letalo pridobi njegovo ime, število potnikov in domet. To se naredi z uporabo *aircrafts.py*.<br/>
 
-Rezultati so prikazani v *analiza.ipynb*.\
+Rezultati so prikazani v *analiza.ipynb*. Brez ponovnega zagona programa bi bili prikazani rezultati za 17. julij 2026, od 12:00 do 18:00.\
 Za lažje delo s časi vzleta in pristanka sem definirala razred Cas, ki mi omogoča izvajanje osnovnih operacij z njimi. 
 
