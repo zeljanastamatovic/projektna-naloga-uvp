@@ -64,13 +64,6 @@ class Cas:
         return False
 
 
-def divide(cas, stevilo):
-    p = (cas.ura * 60 + cas.minuta) // stevilo
-    ura = p // 60
-    minuta = p - ura * 60
-    return Cas(f'{ura:02d}:{minuta:02d}')
-
-
 def into_minutes(cas):
     if is_int(str(cas)):
         return cas

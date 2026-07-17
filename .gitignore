@@ -14,3 +14,5 @@
 *.pyc
 *.synctex.gz
 *.html
+*.pyc
+__pycache__/
